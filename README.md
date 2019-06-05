@@ -36,13 +36,12 @@ pip install opencv-python
 pip install requests
 
 ```
-
-4) Build the NMS extension.
+cd lib/
+python setup3.py build_ext --inplace
+4)`
 
 ```
-cd pytorch-retinanet/lib
-bash build.sh
-cd ../
+
 ```
 
 Note that you may have to edit line 14 of `build.sh` if you want to change which version of python you are building the extension for.
